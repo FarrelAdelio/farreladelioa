@@ -83,9 +83,61 @@
         </div>
 
 
+        <div class="content">
+            <div class="content-inner wrapper">
+                <h1 class="title" data-aos="fade-up">My Project</h1>
 
-        <div class="contact wrapper">
-            <div class="contact-inner">
+                <div class="menu-content">
+                    <div class="menus-content">
+                        <a href="#" class="text button-content tab-1">Personal</a>
+                        <a href="#" class="text button-content tab-2">School</a>
+                    </div>
+
+                    <div class="menu-list">
+                        <div class="list personal">
+                            <div class="list-inner list-inner-1">
+                                <div class="list-inner-inner">
+                                    <h3 class="text first">Class Website</h3>
+                                    <p class="text mid"><span>HTML5 / CSS / JS</span></p>
+                                    <p class="text">
+                                        Class website to simplify class needs and save lots of memories together and we
+                                        named it TekajeDua</p>
+                                    <div class="list-link">
+                                        <a href="https://github.com/FarrelAdelio"><i
+                                                class="fa-brands fa-github"></i></a>
+                                        <a href="https://tekajedua.pages.dev/"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list personal">
+                            <div class="list-inner list-inner-2">
+                                <div class="list-inner-inner">
+                                    <h3 class="text first">Portofolio</h3>
+                                    <p class="text mid"><span>HTML5 / CSS</span></p>
+                                    <p class="text">
+                                        My personal portfolio to display information about myself in programming</p>
+                                    <div class="list-link">
+                                        <a href="https://github.com/FarrelAdelio"><i
+                                                class="fa-brands fa-github"></i></a>
+                                        <a href="https://tekajedua.pages.dev/"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="contact">
+            <div class="contact-inner wrapper">
                 <h1 class="title" data-aos="fade-up">Contact .</h1>
 
                 <div class="contact-conn">
@@ -117,6 +169,13 @@
 
     menuToggle.addEventListener('click', function () {
         nav.classList.toggle("slide");
+    })
+
+    const menuContent = document.querySelector(".menucontent input");
+    const menu2 = document.querySelector("menu2");
+
+    menuContent.addEventListener('click', function () {
+        menu2.classList.toggle("slide");
     })
 </script>
 
