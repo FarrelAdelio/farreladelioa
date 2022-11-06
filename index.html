@@ -44,8 +44,8 @@
         </nav> -->
 
 
-        <section>
-            <div class="section wrapper">
+        <header>
+            <div class="header wrapper">
                 <h3 data-aos="fade-up" class="text">Hi! I'm</h3>
                 <ul class="dynamic-text">
                     <!-- <li><span>Hi! i'm</span></li> -->
@@ -54,7 +54,7 @@
                 <h3 class="text">I am a very passionate student. I focus my skills on frontend and backend development.
                 </h3>
             </div>
-        </section>
+        </header>
 
 
         <div class="about-me">
@@ -88,19 +88,23 @@
                 <h1 class="title" data-aos="fade-up">My Project</h1>
 
                 <div class="menu-content">
-                    <div class="menus-content">
-                        <a href="#" class="text button-content tab-1">Personal</a>
-                        <a href="#" class="text button-content tab-2">School</a>
-                    </div>
+                    <ul class="menus-content">
+                        <li class="text filter-btn active button-content">Personal</li>
 
-                    <div class="menu-list">
-                        <div class="list personal">
-                            <div class="list-inner list-inner-1">
+                        <li class="text filter-btn button-content">School</li>
+                    </ul>
+
+
+                    <div class="filter-items">
+
+                        <section class="list hidden" data-item="school">
+                            <div class="list-inner list-inner-1" data-item="personal">
                                 <div class="list-inner-inner">
                                     <h3 class="text first">Class Website</h3>
                                     <p class="text mid"><span>HTML5 / CSS / JS</span></p>
                                     <p class="text">
-                                        Class website to simplify class needs and save lots of memories together and we
+                                        Class website to simplify class needs and save lots of memories together and
+                                        we
                                         named it TekajeDua</p>
                                     <div class="list-link">
                                         <a href="https://github.com/FarrelAdelio"><i
@@ -110,15 +114,17 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
 
-                        <div class="list personal">
+                        <section class="list" data-item="personal">
                             <div class="list-inner list-inner-2">
                                 <div class="list-inner-inner">
                                     <h3 class="text first">Portofolio</h3>
-                                    <p class="text mid"><span>HTML5 / CSS</span></p>
+                                    <p class="text mid"><span>HTML5 / CSS / JS</span></p>
                                     <p class="text">
-                                        My personal portfolio to display information about myself in programming</p>
+                                        Class website to simplify class needs and save lots of memories together and
+                                        we
+                                        named it TekajeDua</p>
                                     <div class="list-link">
                                         <a href="https://github.com/FarrelAdelio"><i
                                                 class="fa-brands fa-github"></i></a>
@@ -127,7 +133,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
+
 
                     </div>
                 </div>
@@ -163,21 +170,7 @@
     </div>
 
 </body>
-<script>
-    const menuToggle = document.querySelector(".menu-toggle input");
-    const nav = document.querySelector("nav ul");
-
-    menuToggle.addEventListener('click', function () {
-        nav.classList.toggle("slide");
-    })
-
-    const menuContent = document.querySelector(".menucontent input");
-    const menu2 = document.querySelector("menu2");
-
-    menuContent.addEventListener('click', function () {
-        menu2.classList.toggle("slide");
-    })
-</script>
+<script src="functions.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

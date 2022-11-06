@@ -27,12 +27,12 @@ body {
     padding: 0 30px;
 }
 
-section {
+header {
     height: 80vh;
 }
 
 
-.section {
+.header {
     font-family: 'Nunito', Arial, Helvetica, sans-serif;
     position: relative;
     top: 35vh;
@@ -47,7 +47,7 @@ section {
     letter-spacing: 0.3px;
 }
 
-.section .dynamic-text {
+.header .dynamic-text {
     height: 90px;
     line-height: 90px;
     overflow: hidden;
@@ -57,7 +57,7 @@ section {
 
 }
 
-.section li {
+.header li {
     list-style: none;
     /* color: #05f2db; */
     color: #05f2db;
@@ -148,14 +148,27 @@ span {
     display: flex;
 }
 
-.menus-content a{
+.category-title {
+    position: relative;
+}
+
+.menus-content li{
     text-decoration: none;
     background-color: #20267c;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     padding: 15px 0;
     text-align: center;
     width: 150px;
     display: block;
     margin: 30px 5px 30px 0;
+}
+
+.filter-items {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -166,6 +179,8 @@ span {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .list:hover {
@@ -207,11 +222,11 @@ span {
     opacity: 0.7;
 }
 
-.menu-list {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+/* TOGGLE MENU */
+.content ul li.active {
+    border-bottom: 4px solid #05f2db;
 }
+/* END */
 
 .menu-list a {
     text-decoration: none;
@@ -226,10 +241,6 @@ span {
     color: #b6bff3;
     font-size: 40px;
     margin: auto;
-}
-
-.tab-1 {
-    border-bottom: #05f2db solid 3px;
 }
 
 .button-content {
@@ -267,6 +278,10 @@ span {
     margin: 15px 0;
 }
 
+
+.hidden {
+    display: none;
+}
 
 /* Contact */
 
@@ -334,13 +349,13 @@ footer .text {
 }
 
 @media screen and (max-width: 1200px) {
-    .section {
+    .header {
         margin: 0 0 0 20px;
     }
 }
 
 @media screen and (max-width: 1128px) {
-    .section {
+    .header {
         left: 0;
     }
 }
@@ -372,7 +387,7 @@ footer .text {
         width: 500px;
     }
     
-    .section li {
+    .header li {
         font-size: 50px;
     }
 
@@ -404,7 +419,7 @@ footer .text {
         font-size: 20px;
     }
 
-    .section .dynamic-text {
+    .header .dynamic-text {
         margin: 10px 0;
     }
 }
@@ -450,7 +465,7 @@ footer .text {
         margin-top: 200px;
     }
 
-    .section .text {
+    .header .text {
         max-width: 300px;
     }
 }
