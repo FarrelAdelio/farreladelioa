@@ -233,11 +233,11 @@ header {
     margin-bottom: 50px;
     color: transparent;
     -webkit-text-stroke: 2px #dbdef0;
-    text-shadow: 0 0 7px #c6ccf058,
-        0 0 12px #c6ccf058,
-        0 0 14px #c6ccf058,
-        0 0 16px #c6ccf058,
-        0 0 18px #c6ccf058;
+    text-shadow: 0 0 7px rgba(198, 204, 240, 0.345),
+        0 0 12px rgba(198, 204, 240, 0.345),
+        0 0 14px rgba(198, 204, 240, 0.345),
+        0 0 16px rgba(198, 204, 240, 0.345),
+        0 0 18px rgba(198, 204, 240, 0.345);
 }
 
 .about .text {
