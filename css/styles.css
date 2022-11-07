@@ -44,12 +44,12 @@ body {
     margin: auto;
 }
 
-nav ul li {
+nav ul p {
     list-style: none;
     margin-top: 20px;
 }
 
-nav ul li a {
+nav ul p a {
     display: block;
     color: #05f2db;
     text-decoration: none;
@@ -60,8 +60,8 @@ nav ul li a {
 }
 
 /* HAMBURGER MENU */
-    
-.menu-toggle{
+
+.menu-toggle {
     display: flex;
     flex-direction: column;
     height: 23px;
@@ -110,7 +110,7 @@ nav ul {
     box-shadow: 1px 1px 1px 1px rgba(17, 17, 17, 0.671);
 }
 
-.nav ul .sosmed{
+.nav ul .navigation-link {
     display: flex;
     margin-top: 20px;
     padding: 20px 0;
@@ -118,16 +118,52 @@ nav ul {
     justify-content: space-between;
 }
 
-.nav .sosmed .fa-brands {
+.nav ul p .fa-brands {
     font-size: 25px;
     background-color: #05f2db;
     color: #0f0c29;
     padding: 5px;
+    border-radius: 50%;
+}
+
+.nav ul p .fa-brands:hover {
+    opacity: 0.8;
 }
 
 .slide {
     transform: translateX(-90%);
     transition: 0.8s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+    z-index: 10;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+    z-index: 10;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: transparent;
+    -webkit-text-stroke: #05f2db solid;
+    border: 2px solid #05f2db;
+    transform: rotate(45deg) translate(-1px, 0.5px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: transparent;
+    -webkit-text-stroke: #05f2db solid;
+    border: 2px solid #05f2db;
+    transform: rotate(-45deg) translate(-1px, -2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+    z-index: 10;
 }
 
 /* END */
@@ -341,6 +377,10 @@ span {
 
 .list-link {
     margin: auto;
+    justify-content: space-between;
+    display: flex;
+    width: 85px;
+    margin-top: 5px;
 }
 
 .list-link .fa-github,
@@ -353,10 +393,6 @@ span {
 
 .button-content {
     border-radius: 2px;
-}
-
-.menus-content .text {
-    font-size: ;
 }
 
 .button-content:hover {
@@ -437,15 +473,18 @@ span {
 }
 
 
-.fa-instagram,
-.fa-m,
-.fa-linkedin-in,
-.fa-github {
+.contact-sosmed i {
     font-size: 30px;
     color: #333985;
     padding: 10px;
     background-color: #b6bff3;
     border-radius: 100%;
+    animation: floating 1.7s infinite;
+    transition: 0.7s;
+}
+
+.contact-sosmed i:hover {
+    background-color: #05f2db;
 }
 
 footer {
@@ -459,6 +498,26 @@ footer .text {
     font-size: 1em;
     font-weight: 600;
 }
+
+
+
+/* KEYFRAME */
+
+@keyframes floating {
+    0% {
+        transform: translateY(-6%);
+    }
+
+    50% {
+        transform: translateY(6%);
+    }
+
+    100% {
+        transform: translateY(-6%);
+    }
+}
+
+/* END */
 
 @media screen and (max-width: 1200px) {
     .header {
@@ -531,7 +590,7 @@ footer .text {
         justify-content: space-between;
     }
 
-    .sosmed a i {
+    .contact-sosmed a i {
         font-size: 20px;
     }
 
