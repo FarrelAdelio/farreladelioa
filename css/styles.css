@@ -306,6 +306,7 @@ span {
     width: 150px;
     display: block;
     margin: 30px 5px 30px 0;
+    cursor: pointer;
 }
 
 .filter-items {
@@ -558,7 +559,7 @@ footer .text {
     .nav ul .sosmed {
         margin-top: 3px;
     }
-
+    
     .list {
         width: 500px;
     }
