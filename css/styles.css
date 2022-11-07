@@ -27,6 +27,111 @@ body {
     padding: 0 30px;
 }
 
+
+
+/* NAV */
+
+
+.nav {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 20px 0;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+    margin: auto;
+}
+
+nav ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li a {
+    display: block;
+    color: #05f2db;
+    text-decoration: none;
+    font-size: 0.7em;
+    height: 20px;
+    padding: 14px 9px;
+    text-align: center;
+}
+
+/* HAMBURGER MENU */
+    
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    height: 23px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+    right: 20px;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -6px;
+    top: -2px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: transparent;
+    -webkit-text-stroke: #05f2db solid;
+    border: 2px solid #05f2db;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+nav ul {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    align-items: center;
+    padding-top: 30vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #08061776;
+    transform: translateX(10%);
+    transition: 0.8s;
+    box-shadow: 1px 1px 1px 1px rgba(17, 17, 17, 0.671);
+}
+
+.nav ul .sosmed{
+    display: flex;
+    margin-top: 20px;
+    padding: 20px 0;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.nav .sosmed .fa-brands {
+    font-size: 25px;
+    background-color: #05f2db;
+    color: #0f0c29;
+    padding: 5px;
+}
+
+.slide {
+    transform: translateX(-90%);
+    transition: 0.8s;
+}
+
+/* END */
+
 header {
     height: 80vh;
 }
@@ -77,6 +182,7 @@ header {
 
 .about-me {
     height: 130vh;
+    margin-bottom: 10vh;
 }
 
 .about {
@@ -152,7 +258,7 @@ span {
     position: relative;
 }
 
-.menus-content li{
+.menus-content li {
     text-decoration: none;
     background-color: #20267c;
     border-top: none;
@@ -226,6 +332,7 @@ span {
 .content ul li.active {
     border-bottom: 4px solid #05f2db;
 }
+
 /* END */
 
 .menu-list a {
@@ -236,7 +343,8 @@ span {
     margin: auto;
 }
 
-.list-link .fa-github, .fa-arrow-up-right-from-square {
+.list-link .fa-github,
+.fa-arrow-up-right-from-square {
     background-color: transparent;
     color: #b6bff3;
     font-size: 40px;
@@ -245,6 +353,10 @@ span {
 
 .button-content {
     border-radius: 2px;
+}
+
+.menus-content .text {
+    font-size: ;
 }
 
 .button-content:hover {
@@ -315,7 +427,7 @@ span {
     font-size: 18px;
 }
 
-.sosmed {
+.contact-sosmed {
     display: flex;
     flex-direction: column;
     height: 300px;
@@ -381,12 +493,16 @@ footer .text {
     }
 }
 
-@media screen and (max-width: 690px) {
-    
+@media screen and (max-width: 692px) {
+
+    .nav ul .sosmed {
+        margin-top: 3px;
+    }
+
     .list {
         width: 500px;
     }
-    
+
     .header li {
         font-size: 50px;
     }
@@ -405,7 +521,7 @@ footer .text {
         height: 37vh;
     }
 
-    .sosmed {
+    .contact-sosmed {
         flex-direction: row;
         position: relative;
         right: 0;
@@ -442,6 +558,7 @@ footer .text {
         width: 350px;
     }
 }
+
 @media screen and (max-width: 468px) {
     .contact {
         margin-top: 200px;
@@ -453,7 +570,7 @@ footer .text {
 }
 
 @media screen and (max-width: 400px) {
-    
+
     .list {
         width: 300px;
     }
@@ -467,5 +584,9 @@ footer .text {
 
     .header .text {
         max-width: 300px;
+    }
+
+    .skills {
+        gap: 10px;
     }
 }

@@ -23,6 +23,12 @@ liItem.forEach(li => {
 });
 // FILTER FUNCTION END
 
+// GOOGLE TRANSLATE
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+}
+//END
+
 // MENU TOGGLE FUNCITON
 const menuToggle = document.querySelector(".menu-toggle input");
 const nav = document.querySelector("nav ul");
