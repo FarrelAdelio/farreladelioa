@@ -85,7 +85,7 @@ nav ul p a {
 .menu-toggle span {
     display: block;
     width: 28px;
-    height: 3px;
+    height: 5px;
     background-color: transparent;
     -webkit-text-stroke: #05f2db solid;
     border: 2px solid #05f2db;
@@ -104,7 +104,8 @@ nav ul {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #08061776;
+    background-color: rgba(8, 6, 23, .8);
+    backdrop-filter: blur(2px);
     transform: translateX(10%);
     transition: 0.8s;
     box-shadow: 1px 1px 1px 1px rgba(17, 17, 17, 0.671);
