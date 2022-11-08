@@ -291,7 +291,7 @@ span {
 }
 
 .my-skills ul {
-    gap: 25px;
+    gap: 20px;
 }
 
 /* Content */
@@ -547,7 +547,7 @@ footer .text {
 
     100% {
         border-right: 4px solid #05f2db;
-        
+
     }
 }
 
@@ -624,6 +624,11 @@ footer .text {
     } */
 
 
+    .skills li{
+        margin-top: 10px;
+    }
+
+
     .contact-conn {
         flex-direction: column;
         height: 37vh;
@@ -675,6 +680,10 @@ footer .text {
     .contact-conn {
         height: 40vh;
     }
+
+    .skills li {
+        margin-top: 5px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -692,9 +701,5 @@ footer .text {
 
     .header .text {
         max-width: 300px;
-    }
-
-    .skills {
-        gap: 10px;
     }
 }
