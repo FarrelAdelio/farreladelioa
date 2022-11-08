@@ -1,5 +1,5 @@
 // FILTER FUNCTION
-const liItem = document.querySelectorAll('ul li');
+const liItem = document.querySelectorAll('ol li');
 const imgItem = document.querySelectorAll('.filter-items .list');
 
 liItem.forEach(li => {
@@ -22,6 +22,20 @@ liItem.forEach(li => {
     }
 });
 // FILTER FUNCTION END
+
+// Text Animation
+var i=0,text,text2;
+text = "Adelio."
+
+function typing() {
+  if(i<text.length){
+    document.getElementById("text").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing,250);
+  }
+}
+typing();
+// End
 
 // GOOGLE TRANSLATE
 function googleTranslateElementInit() {
