@@ -25,7 +25,7 @@ liItem.forEach(li => {
 
 // Text Animation
 var i=0,text,text2;
-text = "Adelio."
+text = "Farrel."
 
 function typing() {
   if(i<text.length){

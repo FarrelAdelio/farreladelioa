@@ -233,7 +233,7 @@ header {
 
 .about-me {
     height: 130vh;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
 }
 
 .about {
@@ -270,7 +270,7 @@ span {
     align-items: center;
 }
 
-.my-skills ul li .fa-html5,
+.my-skills ul li .fa-html5, .fa-js, 
 .fa-css3-alt,
 .fa-git-alt {
     color: #b6bff3;
@@ -364,6 +364,10 @@ span {
 
 .list-inner-2 {
     background-image: url(images/portofolio.png);
+}
+
+.list-inner-3 {
+    background-image: url(images/simplify.jpeg);
 }
 
 .list-inner:hover {
