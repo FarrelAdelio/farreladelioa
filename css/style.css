@@ -233,7 +233,7 @@ header {
 
 .about-me {
     height: 130vh;
-    margin-bottom: 15vh;
+    margin-bottom: 45vh;
 }
 
 .about {
@@ -667,6 +667,10 @@ footer .text {
     .my-skills ul li {
         font-size: 1em;
         color: #b6bff3;
+    }
+
+    .about-me {
+        margin-bottom: 30vh;
     }
 }
 
